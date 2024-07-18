@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap");
+
+:root {
+  /* COLORS */
+  --cyan: hsl(179, 80%, 58%);
+  --darkBlue: hsl(206, 84%, 22%);
+  --gray: hsl(225, 14%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --veryDarkBlue: hsl(230, 60%, 8%);
+  --red: hsl(343, 100%, 58%);
+
+  /* TYPOGRAPHY */
+  --fontFamily: "Manrope", sans-serif;
+
+  --fontSize: 0.9375rem;
+
+  --fontWeight4: 400;
+  --fontWeight7: 700;
+  --fontWeight8: 800;
+
+  /* SPACING & BORDER-RADIUS*/
+  --margin: 1rem;
+  --padding: 1rem;
+  --borderRadius: 1rem;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 0.3rem;
+    background: var(--darkBlue);
+    display: none;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--veryDarkBlue);
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--veryDarkBlue);
+    width: 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+  }
+
+  /* END SCROLLBAR */
+
+  body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight4);   
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+  }
+
+/* MOBILE FIRST */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.0625rem;
+}
+
+main {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 25.625rem;
+    overflow-x: hidden;
+}
+
+.hero .hero-images {
+    margin-top: calc(var(--margin) * 133);
+    display: flex;
+    height: 15rem;
+    width: 100%;
+}
+
+.hero .hero-left-image img,
+.hero .hero-right-image img {
+    height: 14.4375rem;
+}
+
+.hero .call-to-action {
+    margin: 0 auto;
+    margin-top: calc(var(--margin) * 3.87);
+    width: 20.75rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+

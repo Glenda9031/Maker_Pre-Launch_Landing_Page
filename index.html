@@ -8,47 +8,136 @@
   <title>Frontend Mentor | Maker pre-launch landing page</title>
 </head>
 <body>
-  Get paid for the work you love to do.
+  <header>
+    <img src="./assets/logo.svg" alt="Maker logo">
+  </header>
 
-  The 9-5 grind is so last century. We believe in living life on your 
-  own terms. Whether you’re looking to escape the rat race or set up 
-  a side hustle, we’ve got you covered.
+  <main>
+    <section class="hero">
+      <div class="hero-images">
+        <div class="hero-left-image">
+          <img src="./assets/illustration-hero-left.svg" alt="Illustration of a person working on a computer">
+        </div>
 
-  Indulge your passions
-  Your passions shouldn't be just for the weekend. Earn a living doing what you love.
+        <div class="hero-right-image">
+          <img src="./assets/illustration-hero-right.svg" alt="Illustration of a person working on a computer">
+        </div>
+      </div>
 
-  Gain financial freedom
-  Start making money work for you. There’s nothing quite like earning while you sleep. 
+      <div class="call-to-action">
+        <div class="call-to-action-texts">
+          <h1 class="call-to-action-texts-title">Get paid for the work you <span>love </span>to do.</h1>
+          <p class="call-to-action-texts-description">The 9-5 grind is so last century. We believe in living life on your 
+            own terms. Whether you’re looking to escape the rat race or set up 
+            a side hustle, we’ve got you covered.</p>
+        </div>
+        <button id="hero-button" aria-label="scroll button">
+          <div class="dot"></div>
+        </button>
+      </div>
+    </section>
 
-  Choose your lifestyle
-  Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.
+    <section class="reasons">
+      <div class="reason-item">
+        <div class="reason-item-image">
+          <img src="./assets/illustration-passions.svg" alt="Illustration of a person working on a computer">
+        </div>
+        <div class="reason-item-texts">
+          <p class="reason-item-texts-title">Indulge your passions</p>
+          <p class="reason-item-texts-description">Your passions shouldn't be just for the weekend. 
+            Earn a living doing what you love.</p>
+        </div>
+      </div>
 
-  Work from anywhere
-  Selling online means not being pinned down. Want to work AND travel? Go for it!
+      <div class="reason-item">
+        <div class="reason-item-image">
+          <img src="./assets/illustration-financial-freedom.svg" alt="Illustration of a person working on a computer">
+        </div>
+        <div class="reason-item-texts">
+          <p class="reason-item-texts-title">Gain financial freedom</p>
+          <p class="reason-item-texts-description">Start making money work for you. 
+            There’s nothing quite like earning while you sleep.</p>
+        </div>
+      </div>
 
-  Our pricing plans
-  We only make money when our creators make money. Our plans are always affordable, and 
-  it’s completely free to get started.
+      <div class="reason-item">
+        <div class="reason-item-image">
+          <img src="./assets/illustration-lifestyle.svg" alt="Illustration lifestyle">
+        </div>
+        <div class="reason-item-texts">
+          <p class="reason-item-texts-title">Choose your lifestyle</p>
+          <p class="reason-item-texts-description">Own your daily schedule. 
+            Fancy a lie-in? Go for it! Take charge of your week.</p>
+        </div>
+      </div>
 
-  Dip your toe
-  Just getting started? No problem at all! Our free plan will take you a long way.
-  Free
-  Unlimited products
-  Basic analytics
-  Limited marketplace exposure
-  10% fee per transaction
+      <div class="reason-item">
+        <div class="reason-item-image">
+          <img src="./assets/illustration-work-anywhere.svg" alt="Illustration work anywhere">
+        </div>
+        <div class="reason-item-texts">
+          <p class="reason-item-texts-title">Work from anywhere</p>
+          <p class="reason-item-texts-description">Selling online 
+            means not being pinned down. Want to work AND travel? Go for it!</p>
+        </div>
+      </div>
+    </section>
 
-  Dive right in
-  Ready for the big time? Our paid plan will help you take your business to the next level.
-  $25.00 /month
-  Custom domain
-  Advanced analytics and reports
-  High marketplace visibility
-  5% fee per transaction
+    <section class="pricing-plans">
+      <div class="pricing-plans-heading">
+        <h2>Our pricing plans</h2>
+        <p> We only make money when our creators make money. 
+          Our plans are always affordable, and 
+          it’s completely free to get started.</p>
+      </div>
 
-  Get notified when we launch
-  Email address
-  Get notified
+      <div class="pricing-plans-items">
+        <div class="pricing-plans-item">
+          <h3 class="pricing-plans-item-title">Dip your toe</h3>
+          <p class="pricing-plans-item-description">Just getting 
+            started? No problem at all! Our free plan will take you a long way.</p>
+            <p class="pricing-plans-item-price">Free</p>
+            <ul class="pricing-plans-item-features">
+              <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">Unlimited products</li>
+              <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">Basic analytics</li>
+              <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">Limited marketplace exposure</li>
+              <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">10% fee per transaction</li>
+            </ul>
+        </div>
+
+        <div class="pricing-plans-items">
+          <div class="pricing-plans-item">
+            <h3 class="pricing-plans-item-title">Dive right in</h3>
+            <p class="pricing-plans-item-description">Ready for the big 
+              time? Our paid plan will help you take your business to 
+              the next level.</p>
+              <p class="pricing-plans-item-price">$25.00 <span>/month</span></p>
+              <ul class="pricing-plans-item-features">
+                <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">Custom domain</li>
+                <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">Advanced analytics and reports</li>
+                <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">High marketplace visibility</li>
+                <li><img src="./assets/icon-check.svg" alt="icon-check" aria-hidden="true">5% fee per transaction</li>
+              </ul>
+          </div>
+        </div>
+    </section>
+
+    <section class="subscription">
+      <div class="subscription-wrap">
+        <h3 class="subscription-title">Get notified when we launch</h3>
+
+        <div class="subscription-form">
+          <form action="">
+            <div class="input-wrap">
+              <input type="email" id="email" placeholder="email address" required>
+              <span id="email-error"></span>
+            </div>
+            <button type="submit" id="submit-button">Get notified</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

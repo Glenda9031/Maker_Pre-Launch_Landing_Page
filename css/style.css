@@ -262,6 +262,78 @@ main {
   top: -5%;
 }
 
+.pricing-plans .pricing-plans-item:nth-child(even)::before {
+  content: url("../assets/icon-paid.svg");
+  top: -7%;
+}
+
+.pricing-plans .pricing-plans-item:nth-child(odd),
+.pricing-plans .pricing-plans-item:nth-child(even) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(var(--margin) * 1);
+  padding: 0 calc(var(--padding) * 2);
+  border-radius: calc(var(--borderRadius) * 0.53);
+}
+
+.pricing-plans .pricing-plans-item:nth-child(odd) {
+  /* FREE */
+  height: 26.75rem;
+  background-color: var(--darkBlue);
+}
+
+.pricing-plans .pricing-plans-item:nth-child(even) {
+  /* PAY */
+  height: 28rem;
+  background-color: var(--cyan);
+  color: var(--darkBlue);
+}
+
+.pricing-plans .pricing-plans-item:nth-child(odd) .pricing-plans-item-title,
+.pricing-plans .pricing-plans-item:nth-child(even) .pricing-plans-item-title {
+  font-size: calc(var(--fontSize) * 1.2);
+  font-weight: var(--fontWeight8);
+}
+
+.pricing-plans
+  .pricing-plans-item:nth-child(odd)
+  .pricing-plans-item-description,
+  .pricing-plans
+  .pricing-plans-item:nth-child(even)
+  .pricing-plans-item-description {
+    color: var(--gray);
+    line-height: calc(var(--padding) * 1.67);
+  }
+
+  .pricing-plans .pricing-plans-item:nth-child(odd) .pricing-plans-item-price,
+  .pricing-plans .pricing-plans-item:nth-child(even) .pricing-plans-item-price {
+    font-size: calc(var(--fontSize) * 2.67);
+    font-weight: var(--fontWeight8);
+    display: flex;
+    align-items: center;
+    gap: calc(var(--margin) * 0.5);
+  }
+  
+  .pricing-plans 
+  .pricing-plans-item:nth-child(even)
+   .pricing-plans-item-price
+   span {
+    color: var(--gray);
+    font-size: calc(var(--fontSize) * 1);
+    font-weight: normal;
+   }
+
+  .pricing-plans 
+  .pricing-plans-item:nth-child(odd)
+   .pricing-plans-item-price
+   span 
+   
+
+
+
+
 
 
 

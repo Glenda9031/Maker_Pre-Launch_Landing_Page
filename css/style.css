@@ -305,16 +305,16 @@ main {
   .pricing-plans-item-description {
     color: var(--gray);
     line-height: calc(var(--padding) * 1.67);
-  }
+}
 
-  .pricing-plans .pricing-plans-item:nth-child(odd) .pricing-plans-item-price,
-  .pricing-plans .pricing-plans-item:nth-child(even) .pricing-plans-item-price {
+.pricing-plans .pricing-plans-item:nth-child(odd) .pricing-plans-item-price,
+.pricing-plans .pricing-plans-item:nth-child(even) .pricing-plans-item-price {
     font-size: calc(var(--fontSize) * 2.67);
     font-weight: var(--fontWeight8);
     display: flex;
     align-items: center;
     gap: calc(var(--margin) * 0.5);
-  }
+}
   
   .pricing-plans 
   .pricing-plans-item:nth-child(even)
@@ -325,10 +325,154 @@ main {
     font-weight: normal;
    }
 
-  .pricing-plans 
-  .pricing-plans-item:nth-child(odd)
-   .pricing-plans-item-price
-   span 
+ .pricing-plans 
+ .pricing-plans-item:nth-child(odd)
+   .pricing-plans-item-features
+ .pricing-plans
+   .pricing-plans-item:nth-child(even)
+   .pricing-plans-item-features {
+    line-height: calc(var(--padding) * 1.66);
+    font-weight: var(--fontWeight7);
+    list-style: none;
+}
+
+.pricing-plans 
+   .pricing-plans-item:nth-child(odd)
+   .pricing-plans-item-features
+   li
+   img {
+    filter: brightness(1000%) saturate(100) contrast(100);
+}
+
+.pricing-plans 
+   .pricing-plans-item:nth-child(odd)
+   .pricing-plans-item-features
+   li
+   img, 
+.pricing-plans 
+   .pricing-plans-item:nth-child(even)
+   .pricing-plans-item-features
+   li
+   img {
+    padding-right: calc(var(--padding) * 0.7);
+ }
+
+ .subscription {
+    margin-top: calc(var(--margin) * 9.4);
+    width: 20.4375rem;
+    height: 14.3125rem;
+    background-image: url("../assets/bg-footer-squiggle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.subscription .subscription-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription .subscription-wrap .subscription-title {
+  width: 15.5rem;
+  font-size: calc(var(--fontSize) * 1.6);
+  padding: calc(var(--padding) * 0.8) 0;
+  text-align: center;
+}
+
+.subscription .subscription-wrap .subscription-form form {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription .subscription-wrap .subscription-form form .input-wrap {
+  width: 20.4375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription .subscription-wrap .subscription-form form .input-wrap input {
+  height: 3rem;
+  outline: none;
+  color: var(--white);
+  background-color: var(--darkBlue);
+  border: .1rem solid transparent;
+  border-radius: calc(var(--borderRadius) * 1.6);
+  padding-left: calc(var(--padding) * 1.6);
+}
+
+.subscription 
+.subscription-wrap 
+.subscription-form form 
+.input-wrap input::placeholder {
+  color: var(--gray);
+  font-weight: var(--fontWeight7);
+}
+
+.subscription 
+.subscription-wrap 
+.subscription-form form 
+.input-wrap span {
+  font-size: calc(var(--fontSize) * 0.8);
+  color: var(--red);
+  text-align: left;
+  margin-top: calc(var(--margin) * 0.3);
+  padding-left: calc(var(--padding) * 1.6);
+}
+
+.subscription 
+.subscription-wrap 
+.subscription-form form 
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--cyan);
+  color: var(--veryDarkBlue);
+  font-weight: var(--fontWeight7);
+  border: .1rem solid transparent;
+  border-radius: calc(var(--borderRadius) * 1.6);
+  transition: all 0.2s ease;
+}
+
+.subscription 
+.subscription-wrap 
+.subscription-form form 
+button:hover {
+  color: var(--white);
+  border: .1rem solid var(--cyan);
+  background-color: transparent;
+}
+
+footer {
+  margin-top: calc(var(--margin) * 9.6);
+  height: 7.5rem;
+  text-align: center;
+  padding: calc(var(--padding) * 0.5) calc(var(--padding) * 0.3);
+}
+
+footer p a {
+  color: var(--gray);
+  font-weight: var(--fontWeight6);
+  transition: all 0.2s ease;
+}
+
+footer p a:hover {
+  color: var(--cyan);
+}
+
+/* TABLETS */
+
+
+
+
+
    
 
 

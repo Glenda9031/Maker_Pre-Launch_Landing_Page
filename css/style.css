@@ -524,7 +524,7 @@ footer p a:hover {
   .hero .call-to-action-texts .call-to-action-texts-description {
     padding: 0 calc(var(--padding) * 0.6);
     min-width: 28.5625rem;
-    msx-width: 33.375rem;
+    max-width: 33.375rem;
     margin: 0 auto;
     margin-top: calc(var(--margin) * 2);
   }
@@ -626,7 +626,154 @@ footer p a:hover {
 
 /* Desktop */
 @media (min-weight: 64rem) {
+  header {
+    height: 12.3125rem;
+    justify-content: flex-start;
+    padding-left: calc(var(--padding) * 3.07);
+  }
+
+  .hero {
+    width: 100vw;
+    height: 28.6875rem;
+    margin-top: calc(var(--margin) * 2.13);
+    overflow-y: hidden;
+  }
+
+  .hero .hero-images {
+    margin-top: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero .hero-images .hero-left-image {
+    transform: translateX(-10%);
+  }
+
+  .hero .hero-images .hero-right-image {
+    transform: translateX(10%);
+  }
+
+  .hero .hero-images .hero-left-image img,
+  .hero .hero-images .hero-right-image img {
+    height: 28.6875rem;
+  }
+
+  .hero .call-to-action {
+    position: relative;
+    Z-index: 1;
+    margin-top: calc(var(--margin) * -25);
+    width: 50%;
+    min-width: 29.0625rem;
+    height: 22.8125rem;
+    background-image: url("../assets/bg-hero-squiggle.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .hero .call-to-action .call-to-action-texts .call-to-action-texts-title {
+    font-size: calc(var(--fontSize) * 3.2);
+    line-height: calc(var(--padding) * 3.73);
+    padding: 0 calc(var(--padding) * 6);
+    width: 100%;
+  }
+
+  .hero .call-to-action .call-to-action-texts .call-to-action-texts-description {
+    padding: 0 calc(var(--padding) * 7.5);
+    min-width: 33.75rem;
+    margin-top: calc(var(--margin) * 2);
+  }
+
+  .hero .call-to-action button {
+    margin-top: calc(var(--margin) * 4.33);
+  }
+
+  .reasons {
+    margin-top: calc(var(--margin) * 13.47);
+    width: 69.375rem;
+    height: 23.9375rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .reasons .reason-item {
+    width: 15.9375rem;
+    height: 22.1875rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .reasons .reason-item:nth-child(even) {
+    align-self: flex-end;
+  }
   
+  .reasons .reason-item-image {
+    width: 10rem;
+    height: 10.25rem;
+    border-radius: calc(var(--borderRadius) * 3);
+  }
+
+  .reasons .reason-item-image img {
+    width: 5.5rem;
+    height: 6.625rem;
+  }
+
+  .reasons .reason-item-texts {
+    width: 15.625rem;
+    height: 7.6875rem;
+  }
+
+  .reasons .reason-item-texts .reason-item-texts-title,
+  .reasons .reason-item-texts .reason-item-texts-description {
+    text-align: left;
+  }
+
+  .reasons .reason-item-texts .reason-item-texts-title {
+    font-size: calc(var(--fontSize) * 1.2);
+    font-weight: var(--fontWeight8);
+  }
+
+  .reasons .reason-item-texts .reason-item-texts-description {
+    color: var(--gray);
+    line-height: calc(var(--padding) * 1.66);
+  }
+
+  .pricing-plans {
+    margin-top: calc(var(--margin) * 14);
+    width: 57.5rem;
+    height: 41.875rem;
+    align-items: center;
+  }
+
+  .pricing-plans .pricing-plans-heading {
+    height: 7.3125rem;
+  }
+
+  .pricing-plans .pricing-plans-heading h2 {
+    font-size: calc(var(--fontSize) * 2.13);
+  }
+
+  .pricing-plans .pricing-plans-heading p {
+    width: 31.8125rem;
+  }
+
+  .pricing-plans .pricing-plans-items {
+    height: 30.125rem;
+    fkex-direction: row;
+    align-items: center;
+  }
+
+  .pricing-plans .pricing-plans-item:nth-child(odd),
+  .pricing-plans .pricing-plans-item:nth-child(even) {
+    width: 27.8125rem;
+  }
+
+  
+
+
 }
 
 

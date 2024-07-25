@@ -39,16 +39,18 @@
     background: var(--darkBlue);
     display: none;
   }
+
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--veryDarkBlue);
-    border-radius: 10px;
+    box-shadow: inset 0 0 .3125rem var(--veryDarkBlue);
+    border-radius: .625rem;
   }
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: var(--veryDarkBlue);
-    width: 5px;
-    border-radius: 10px;
+    width: .3125rem;
+    border-radius: .625rem;
     transition: all 0.2s ease-in-out;
   }
   /* Handle on hover */
@@ -771,9 +773,33 @@ footer p a:hover {
     width: 27.8125rem;
   }
 
+  .subscription {
+    margin-top: calc(var(--margin) * 7.87);
+    width: 100%;
+    height: 14.25rem;
+    background-size: 100% 100%;
+  }
+
+  .subscription .subscription-wrap {
+    transform: translateY(25%)
+    height: 10.1875rem;
+  }
+
+  .subscription .subscription-wrap .subscription-title {
+    font-size: calc(var(--fontSize) * 1.6);
+    font-weight: var(--fontWeight8);
+    width: 29.75rem;
+  }
   
-
-
+  .subscription .subscription-wrap .subscription-form form {
+    width: 29.75rem;
+    height: 5rem;
+    align-items: flex-start;
+  }
+  
+  .subscription .subscription-wrap .subscription-form form button {
+    width: 8.75rem;
+  }
 }
 
 

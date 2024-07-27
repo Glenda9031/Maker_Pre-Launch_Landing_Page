@@ -30,6 +30,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 /* SCROLLBAR */
@@ -174,6 +175,16 @@ main {
     justify-content: space-between;
 }
 
+.reasons .reason-item {
+  width: 20.4375rem;
+  height: 15.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .reasons .reason-item .reason-item-image {
   width: 7.5rem;
   height: 7.6875rem;
@@ -232,7 +243,7 @@ main {
 }
 
 .pricing-plans .pricing-plans-heading p {
-  width: 20.4375rem;
+  width: 20.0625rem;
   color: var(--gray);
   line-height: calc(var(--padding) * 1.67);
 }
@@ -279,7 +290,6 @@ main {
   padding: 0 calc(var(--padding) * 2);
   border-radius: calc(var(--borderRadius) * 0.53);
 }
-
 .pricing-plans .pricing-plans-item:nth-child(odd) {
   /* FREE */
   height: 26.75rem;
@@ -290,7 +300,7 @@ main {
   /* PAY */
   height: 28rem;
   background-color: var(--cyan);
-  color: var(--darkBlue);
+  color: var(--veryDarkBlue);
 }
 
 .pricing-plans .pricing-plans-item:nth-child(odd) .pricing-plans-item-title,
@@ -306,7 +316,7 @@ main {
   .pricing-plans-item:nth-child(even)
   .pricing-plans-item-description {
     color: var(--gray);
-    line-height: calc(var(--padding) * 1.67);
+    line-height: calc(var(--padding) * 1.66);
 }
 
 .pricing-plans .pricing-plans-item:nth-child(odd) .pricing-plans-item-price,
